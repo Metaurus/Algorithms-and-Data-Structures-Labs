@@ -34,9 +34,7 @@ public class DoubleLinkedCircularList {
 		}
 
 		Node current = head;
-		for(int i = 1; i < size; i++) { //Loop through the list via a for loop to get to the node before the tail
-			current = current.next;
-		}
+		current = tail; //Set the current node to the end
 		tail = newNode; //When the current node is at the end, its next node will be the new one
 		tail.prev = current; //Link the previous node of the new node to be the instantiated one (which equals the previous tail)
 		tail.next = head; //Link the tail to the head

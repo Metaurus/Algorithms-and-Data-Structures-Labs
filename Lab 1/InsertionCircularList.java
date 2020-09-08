@@ -107,6 +107,7 @@ public class InsertionCircularList {
 		list.queue("PHRASE");
 		list.dequeue();
 		list.dequeueFromBack();
+		list.dequeueFromBack();
 	}
 
 }
